@@ -1,0 +1,33 @@
+[2024-06-19 03:40:48,534] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tecnica_postgres.Crear_tabla manual__2024-06-19T03:40:46.281041+00:00 [queued]>
+[2024-06-19 03:40:48,548] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tecnica_postgres.Crear_tabla manual__2024-06-19T03:40:46.281041+00:00 [queued]>
+[2024-06-19 03:40:48,549] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-19 03:40:48,549] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-06-19 03:40:48,550] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-19 03:40:48,574] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): Crear_tabla> on 2024-06-19 03:40:46.281041+00:00
+[2024-06-19 03:40:48,581] {standard_task_runner.py:52} INFO - Started process 3000 to run task
+[2024-06-19 03:40:48,584] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'tecnica_postgres', 'Crear_tabla', 'manual__2024-06-19T03:40:46.281041+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/tecnica_posgres.py', '--cfg-path', '/var/tmp/tmp2hjrit0c', '--error-file', '/var/tmp/tmphokj0dju']
+[2024-06-19 03:40:48,586] {standard_task_runner.py:80} INFO - Job 5: Subtask Crear_tabla
+[2024-06-19 03:40:48,696] {task_command.py:371} INFO - Running <TaskInstance: tecnica_postgres.Crear_tabla manual__2024-06-19T03:40:46.281041+00:00 [running]> on host f8e18ce51c9d
+[2024-06-19 03:40:48,845] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tecnica_postgres
+AIRFLOW_CTX_TASK_ID=Crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-19T03:40:46.281041+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-19T03:40:46.281041+00:00
+[2024-06-19 03:40:48,859] {base.py:68} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-19 03:40:48,885] {dbapi.py:231} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS tecnica_ml (
+            id VARCHAR(100),
+            title VARCHAR(100),
+            price VARCHAR(100),
+            thumbnail VARCHAR(100),
+            created_date VARCHAR(8),
+            PRIMARY KEY (id, created_date)
+        );
+        , parameters: None
+[2024-06-19 03:40:48,933] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=tecnica_postgres, task_id=Crear_tabla, execution_date=20240619T034046, start_date=20240619T034048, end_date=20240619T034048
+[2024-06-19 03:40:48,958] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-06-19 03:40:49,006] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
