@@ -7,7 +7,9 @@ En este proyecto hice enfasis en herramientas de orquestación como Airflow, par
 
 ### Requisitos para el proyecto
 .Python3
+
 .Docker(Principal herramienta que contiene, Airflow, PostgreSQL. Podrá ver la configuración de mi docker-compose dónde tengo los servicios de Airflow y PostgreSQL)
+
 .Gestor de base de datos(En este caso use Dbeaver)
 
 
